@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>App Creation</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="css/vendor.css" rel="stylesheet">
     <style>
     .parallax-cover {
         background: url('img/cover02.jpg'), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)); 
@@ -18,7 +19,7 @@ background-blend-mode: overlay;
     </style>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-gray-100 font-serif" id="top">
 
     <!-- navigation -->
     <nav class="py-6 bg-white shadow-xl fixed w-full z-50">
@@ -32,22 +33,22 @@ background-blend-mode: overlay;
                 <div class="justify-center text-center">
                     <ul class="">
                         <li class="inline-block px-2"><a
-                                class="uppercase text-lg focus:outline-none hover:text-teal-600" href="">Home</a></li>
+                                class="uppercase text-lg focus:outline-none text-teal-600" href="#top">Home</a></li>
                         <li class="inline-block px-2"><a
-                                class="uppercase text-lg focus:outline-none hover:text-teal-600" href="">Features</a>
+                                class="uppercase text-lg focus:outline-none hover:text-teal-600" href="#contact">Contact</a>
                         </li>
                         <li class="inline-block px-2"><a
-                                class="uppercase text-lg focus:outline-none hover:text-teal-600" href="">About</a></li>
+                                class="uppercase text-lg focus:outline-none hover:text-teal-600" href="#about">About</a></li>
                         <li class="inline-block px-2"><a
-                                class="uppercase text-lg focus:outline-none hover:text-teal-600" href="">Services</a>
+                                class="uppercase text-lg focus:outline-none hover:text-teal-600" href="#services">Services</a>
                         </li>
                         <li class="inline-block px-2"><a
-                                class="uppercase text-lg focus:outline-none hover:text-teal-600" href="">Portfolio</a>
+                                class="uppercase text-lg focus:outline-none hover:text-teal-600" href="#portfolio">Portfolio</a>
                         </li>
                         <li class="inline-block px-2"><a
-                                class="uppercase text-lg focus:outline-none hover:text-teal-600" href="">Team</a></li>
+                                class="uppercase text-lg focus:outline-none hover:text-teal-600" href="#teams">Team</a></li>
                         <li class="inline-block px-2"><a
-                                class="uppercase text-lg focus:outline-none hover:text-teal-600" href="">Product</a>
+                                class="uppercase text-lg focus:outline-none hover:text-teal-600" href="#product">Product</a>
                         </li>
                     </ul>
                 </div>
@@ -65,7 +66,7 @@ background-blend-mode: overlay;
 
 
     <!-- header -->
-    <section class="py-10">
+    <section class="py-10" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <div class="text-center">
                 <h3 class="text-4xl uppercase">We build</h3>
@@ -84,7 +85,7 @@ background-blend-mode: overlay;
     <!-- end header -->
 
     <!-- article -->
-    <article class="bg-gray-300">
+    <article class="bg-gray-300" id="about">
         <div class="container">
             <div class="flex flex-wrap">
                 <!-- content -->
@@ -115,7 +116,7 @@ background-blend-mode: overlay;
     <!-- end article -->
 
     <!-- section services -->
-    <section class="services py-10 bg-gray-200">
+    <section class="services py-10 bg-gray-200" id="services" data-aos="fade-right" data-aos-duration="2000">
         <div class="container">
             <div class="text-center py-5">
                 <h3 class="text-3xl uppercase">Our Services</h3>
@@ -480,20 +481,20 @@ background-blend-mode: overlay;
     <!-- end section services -->
 
 <!-- completed project -->
-<section class="project py-10 parallax-cover">
+<section class="project py-10 parallax-cover" id="project">
 <div class="container">
 <div class="flex flex-wrap justify-center">
 
     <div class="w-full sm:w-full md:w-1/2 lg:w-1/3">
         <div class="p-2 m-2 text-white rounded-lg border-2 border-white">
-            <h3 class="text-6xl text-center">100</h3>  
+            <h3 class="text-6xl text-center"><span class="counts">100</span></h3>  
             <h3 class="text-2xl text-center">Project Completed</h3>
         </div>        
     </div>
 
     <div class="w-full sm:w-full md:w-1/2 lg:w-1/3">
         <div class="p-2 m-2 text-white rounded-lg border-2 border-white">
-            <h3 class="text-6xl text-center">95</h3>  
+            <h3 class="text-6xl text-center"><span class="counts">95</span></h3>  
             <h3 class="text-2xl text-center">Happy Customers</h3>
         </div>        
     </div>
@@ -501,7 +502,7 @@ background-blend-mode: overlay;
 
     <div class="w-full sm:w-full md:w-1/2 lg:w-1/3">
         <div class="p-2 m-2 text-white rounded-lg border-2 border-white">
-            <h3 class="text-6xl text-center">99%</h3>  
+            <h3 class="text-6xl text-center"><span class="counts">99</span>%</h3>  
             <h3 class="text-2xl text-center">Positive Feedback</h3>
         </div>        
     </div>
@@ -512,7 +513,7 @@ background-blend-mode: overlay;
 
 
     <!-- section members -->
-    <section class="members py-10">
+    <section class="members py-10" id="teams">
         <div class="container">
             <div class="text-center py-5">
                 <h3 class="text-3xl uppercase">Team Members</h3>
@@ -585,7 +586,7 @@ background-blend-mode: overlay;
     <!-- end section members -->
 
     <!-- section pricing -->
-    <section class="pricing bg-gray-300 py-10">
+    <section class="pricing bg-gray-300 py-10" id="product" data-aos="zoom-in-up" data-aos-duration="1000">
         <div class="container">
             <div class="py-5">
                 <h3 class="text-3xl text-center uppercase">Our Pricing</h3>
@@ -594,10 +595,10 @@ background-blend-mode: overlay;
                 </p>
             </div>
 
-            <div class="flex flex-wrap justify-center">
+            <div class="flex flex-wrap justify-center py-10">
                 <!-- first card -->
                 <div class="w-full lg:w-1/3 md:w-1/2 sm:w-full">
-                    <div class="px-2 py-10 m-2 text-center bg-white shadow-lg hover:shadow-xl">
+                    <div class="px-2 py-10 m-2 text-center bg-white shadow-lg hover:shadow-xl pricing-card">
                         <h3 class="text-3xl uppercase border-b font-extrabold sm:pb-2 md:pb-5">Basic</h3>
                         <ul class="md:py-5">
                             <li class="block p-2 text-gray-800">Unlimited Package</li>
@@ -620,7 +621,7 @@ background-blend-mode: overlay;
 
                 <!-- first card -->
                 <div class="w-full lg:w-1/3 md:w-1/2 sm:w-full">
-                    <div class="px-2 py-10 m-2 text-center bg-teal-600 shadow-lg hover:shadow-xl">
+                    <div class="px-2 py-10 m-2 text-center bg-teal-600 shadow-lg hover:shadow-xl pricing-card">
                         <h3 class="text-3xl uppercase border-b text-white font-extrabold sm:pb-2 md:pb-5">Standard</h3>
                         <ul class="md:py-5">
                             <li class="block p-2 text-white">Unlimited Package</li>
@@ -643,7 +644,7 @@ background-blend-mode: overlay;
 
                 <!-- first card -->
                 <div class="w-full lg:w-1/3 md:w-1/2 sm:w-full">
-                    <div class="px-2 py-10 m-2 text-center bg-white shadow-lg hover:shadow-xl">
+                    <div class="px-2 py-10 m-2 text-center bg-white shadow-lg hover:shadow-xl pricing-card">
                         <h3 class="text-3xl uppercase border-b font-extrabold sm:pb-2 md:pb-5">Premium</h3>
                         <ul class="md:py-5">
                             <li class="block p-2 text-gray-800">Unlimited Package</li>
@@ -669,7 +670,7 @@ background-blend-mode: overlay;
     </section>
 
     <!-- Portfolio -->
-    <section class="portfolio py-10">
+    <section class="portfolio py-10" id="portfolio">
         <div class="container">
             <div class="py-5">
                 <h3 class="text-3xl text-center uppercase">Portfolio</h3>
@@ -734,26 +735,95 @@ background-blend-mode: overlay;
     </section>
     <!-- end Portfolio -->
 
+
+    <!-- get in touch -->
+    <section class="getTouch py-10 bg-teal-600" id="contact">
+        <div class="container">
+            <div class="py-5">
+                <h3 class="text-3xl text-center uppercase text-white font-extrabold">Get in touch</h3>
+                <p class="text-center text-white">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima, obcaecati?
+                </p>
+            </div>
+
+            <div class="flex flex-wrap">
+
+                <div class="w-full sm:w-full md:w-full lg:w-1/2">
+                <div class="text-white">
+                    <h3 class="text-2xl uppercase font-semibold">contact</h3>
+                    <p class="text-xl">
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quis hic consectetur sequi debitis quaerat? Consequuntur, necessitatibus itaque. Aliquid sapiente soluta quae, quibusdam eveniet cumque.
+                    </p>
+                    <ul class="py-2 my-2 text-xl">
+                        <li class="block">Phone: +977-1234567890</li>
+                        <li class="block">Email: appcreation@gmail.com</li>
+                        <li class="block">Website: https://www.appcreation.com</li>
+                        <li class="block">Address: New Orleans, USA</li>
+                    </ul>
+                </div>
+                </div>
+
+                <!-- form -->
+                <div class="w-full sm:w-full md:w-full lg:w-1/2">
+                    <div class="p-2 m-2">
+                    <form action="" method="POST">
+
+                        <div class="flex flex-wrap">
+                            <div class="w-full sm:w-full md:w-full lg:w-1/2">
+                                <div class="p-2 m-2">
+                                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-teal-900 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Name">
+                            </div>
+                        </div>
+                            <div class="w-full sm:w-full md:w-full lg:w-1/2">
+                                <div class="p-2 m-2">
+                                <input class="appearance-none block w-full bg-gray-200 text-gray-700 border border-teal-900 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white" id="grid-first-name" type="text" placeholder="Email">
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="w-full">
+                            <div class="p-2 m-2">
+                                <textarea class="appearance-none block w-full bg-gray-200 text-gray-700 border border-teal-900 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white h-32" name="" id="" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        
+                        <div class="px-2 mx-2">
+                            <button class="border border-teal-900 bg-teal-800 hover:bg-teal-700 text-white font-bold px-4 py-2 my-2" type="submit">Submit</button>
+                        </div>
+
+                    </form>    
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- end get in touch -->
+
+
+    <!-- mapBox   -->
+    <section class="mapBox">
+        <img src="img/mapBox.png" alt="" class="w-full h-64 object-cover">
+    </section>
+    <!-- end mapBox -->
+
     <footer class="bottom-0 bg-gray-800 p-5">
         <div class="text-center">
-            <h3 class="text-lg text-white">Copyright &copy; 2020 Techlink. All rights reserved.</h3>
+            <h3 class="text-lg text-white">
+                Copyright &copy; 
+                <span id="year"></span>
+                <a href="#0" title="">Techlink</a>. 
+                  All rights reserved.
+                </h3>
         </div>
     </footer>
 
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/vendor.js"></script>
+    <script src="js/main.js"></script>
     <script>
-        window.onscroll = function() {removeLogo()};
-        var logo = document.getElementById('logo');
-        var sticky = logo.offsetTop;
-
-        function removeLogo() {
-            if(window.pageYOffset >= sticky) {
-                logo.classList.add("hidden");
-            }
-            else {
-                logo.classList.remove("hidden");
-            }
-        }
-
+        document.getElementById('year').innerHTML = new Date().getFullYear();
     </script>
 
 </body>
