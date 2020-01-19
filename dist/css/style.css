@@ -11444,6 +11444,20 @@ video {
   margin-right: auto;
 }
 
+.nav-link:after {
+  content: '';
+  width: 0;
+  height: 2px;
+  background-color: #319795;
+  display: block;
+  -webkit-transition: width .5s;
+  transition: width .5s;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
 @media (min-width: 640px) {
   .sm\:sr-only {
     position: absolute;

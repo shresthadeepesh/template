@@ -32,3 +32,15 @@
     width: 10%;
     @apply border-b-2 border-white block mx-auto;
 }
+
+.nav-link:after {
+    content: '';
+    width: 0;
+    height: 2px;
+    @apply bg-teal-600 block;
+    transition: width .5s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
