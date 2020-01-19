@@ -18,5 +18,17 @@
     transition: 0.4s ease;
 }
 .pricing-card:hover {
-    @apply -mt-5;
+    @apply -mt-10;
+}
+
+.heading-border:after {
+    content: '';
+    width: 10%;
+    @apply border-b-2 border-teal-600 block mx-auto;
+}
+
+.heading-border-inverse:after {
+    content: '';
+    width: 10%;
+    @apply border-b-2 border-white block mx-auto;
 }
