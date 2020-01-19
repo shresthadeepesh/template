@@ -30,24 +30,29 @@ background-blend-mode: overlay;
                         class="bg-teal-600 text-white px-2">App</span> creation</h3>
             </div>
             <div class="text-gray-800">
-                <div class="justify-center text-center">
+                <div class="sm:block md:hidden" id="menuBtn">
+                    <svg class="w-10 h-10 fill-current hover:text-gray-700 justify-start" viewBox="0 -53 384 384" xmlns="http://www.w3.org/2000/svg"><path d="m368 154.667969h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 32h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/><path d="m368 277.332031h-352c-8.832031 0-16-7.167969-16-16s7.167969-16 16-16h352c8.832031 0 16 7.167969 16 16s-7.167969 16-16 16zm0 0"/></svg>
+                </div>
+
+
+                <div class="justify-center text-center hidden sm:hidden md:block" id="menuItems">
                     <ul class="">
-                        <li class="inline-block px-2"><a
+                        <li class="md:inline-block px-2"><a
                                 class="uppercase text-lg focus:outline-none text-teal-600" href="#top">Home</a></li>
-                        <li class="inline-block px-2"><a
+                        <li class="md:inline-block px-2"><a
                                 class="uppercase text-lg focus:outline-none hover:text-teal-600" href="#contact">Contact</a>
                         </li>
-                        <li class="inline-block px-2"><a
+                        <li class="md:inline-block px-2"><a
                                 class="uppercase text-lg focus:outline-none hover:text-teal-600" href="#about">About</a></li>
-                        <li class="inline-block px-2"><a
+                        <li class="md:inline-block px-2"><a
                                 class="uppercase text-lg focus:outline-none hover:text-teal-600" href="#services">Services</a>
                         </li>
-                        <li class="inline-block px-2"><a
+                        <li class="md:inline-block px-2"><a
                                 class="uppercase text-lg focus:outline-none hover:text-teal-600" href="#portfolio">Portfolio</a>
                         </li>
-                        <li class="inline-block px-2"><a
+                        <li class="md:inline-block px-2"><a
                                 class="uppercase text-lg focus:outline-none hover:text-teal-600" href="#teams">Team</a></li>
-                        <li class="inline-block px-2"><a
+                        <li class="md:inline-block px-2"><a
                                 class="uppercase text-lg focus:outline-none hover:text-teal-600" href="#product">Product</a>
                         </li>
                     </ul>
@@ -70,7 +75,7 @@ background-blend-mode: overlay;
         <div class="container">
             <div class="text-center">
                 <h3 class="text-4xl uppercase font-extrabold">We build</h3>
-                <h3 class="text-6xl uppercase text-teal-600 font-extrabold">Creative Ideas</h3>
+                <h3 class="md:text-6xl sm:text-5xl text-5xl uppercase text-teal-600 font-extrabold">Creative Ideas</h3>
                 <h3 class="text-2xl uppercase heading-border">To make your business successful</h3>
                 <p class="text-gray-700 text-lg py-5">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deserunt asperiores molestiae odio fuga
@@ -824,6 +829,14 @@ background-blend-mode: overlay;
     <script src="js/main.js"></script>
     <script>
         document.getElementById('year').innerHTML = new Date().getFullYear();
+
+        //for navigation bar
+       var menuItems = $('#menuItems');
+       var menu = $('#menuBtn');
+
+       menu.on('click', function() {
+        menuItems.toggle('slow');
+       });
     </script>
 
 </body>
