@@ -9,3 +9,9 @@ css used Tailwindcss
 built within 2 hours.
 
 .No JS used yet!
+<<<<<<< HEAD
+
+<!-- After couple of mins  -->
+Jquery added inorder to make js easier for scroll, counters
+=======
+>>>>>>> 79f30ba8e5c7f27956d71ca29f7f9de0b8386bdc

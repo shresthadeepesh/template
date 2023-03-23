@@ -11421,42 +11421,28 @@ video {
 }
 
 .pricing-card:hover {
-  margin-top: -1.25rem;
+  margin-top: -2.5rem;
 }
 
-.ribbon{
-  width:120px;
-  height:100px;
-  background-color: #fff;
-  position:absolute;
-  right:100px;
-  top:-350px;
-  -webkit-animation:drop forwards .8s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-          animation:drop forwards .8s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-}
-
-.ribbon:before{
+.heading-border:after {
   content: '';
-  position: absolute;
-  z-index: 2;
-  left: 0;
-  bottom: -60px;
-  border-left: 60px solid #fff;
-  border-right: 60px solid #fff;
-  border-bottom: 60px solid transparent;
+  width: 10%;
+  border-bottom-width: 2px;
+  border-color: #319795;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* // .ribbon:after{
-	// 	content:'';
-	// 	width:200px;
-	// 	height:270px;
-	// 	position: absolute;
-	// 	z-index: -1;
-	// 	left: 0;
-	// 	bottom:-120px;
-	// 	background-color:$shadow;
-	// 	transform:skewY(35deg) skewX(0);
-	// } */
+.heading-border-inverse:after {
+  content: '';
+  width: 10%;
+  border-bottom-width: 2px;
+  border-color: #fff;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 @media (min-width: 640px) {
   .sm\:sr-only {
